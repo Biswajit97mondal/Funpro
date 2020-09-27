@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle.js and Typed.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul>
+        <li><div id="orange" class="orange"></div></li>
+        <li><div class="white">
+            <div id="typed-strings">
+                <h1 style="font-size: 36px; font-weight: 500; color:blue;">Jai Hind!</h1>
+                <h1 style="font-size: 36px; font-weight: 500; color:blue;">Sare jaha se acha Hindustan hamara</h1>
+              </div>
+              <span id="typed"></span>
+        </div></li>
+        <li><div id="green" class="green"></div></li>
+    </ul>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#typed', {
+          stringsElement: '#typed-strings',
+          loop: true,
+          loopCount: Infinity,
+        });
+      </script>
+    <script src="particles.js"></script>
+    <script src="orange.js"></script>
+    <script src="green.js"></script>
+    
+</body>
+</html>
